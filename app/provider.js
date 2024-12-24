@@ -14,7 +14,7 @@ function Provider({children}) {
         user&&CheckIsNewUser();
     },[user])
 
-    const CheckIsNewUser=async()=>{
+    const CheckIsNewUser = async()=>{
         // //check is user already exist
         // const result = await db.select().from(USER_TABLE)
         // .where(eq(USER_TABLE.email,user?.primaryEmailAddress?.emailAddress))
@@ -28,7 +28,7 @@ function Provider({children}) {
         //     }).returning({id:USER_TABLE.id})
 
         //     console.log(userResp);
-          const resp=await axios.post('/api/create-user',{user:user});
+          const resp = await axios.post('/api/create-user',{user:user});
           console.log(resp.data);
       
 

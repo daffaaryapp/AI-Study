@@ -11,7 +11,7 @@ export async function GET() {
     await inngest.send({
       name: "test/hello.world",
       data: {
-        email: "testUser @example.com",
+        email: "testUser@example.com",
       },
     });
 
