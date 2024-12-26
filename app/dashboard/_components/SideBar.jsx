@@ -33,7 +33,9 @@ function SideBar() {
       </div>
 
       <div className='mt-10'>
+        <Link href={'/create'} className='w-full'>
         <Button className='w-full'>+ Create New</Button>
+        </Link>
 
         <div className='mt-5'>
           {Menulist.map((menu,index)=>(
